@@ -1,0 +1,28 @@
+name: flutter_printer_sdk
+description: "Flutter plugin for Printer"
+version: 1.2.0
+homepage:
+
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  json_annotation: ^4.9.0
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.9
+  json_serializable: ^6.8.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutter_printer_sdk
+        pluginClass: FlutterPrinterSdkPlugin
+      ios:
+        pluginClass: FlutterPrinterSdkPlugin
